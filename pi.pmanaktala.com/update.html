@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Update</title>	
+			<link rel="stylesheet" type="text/css" href="a.css">
+			<style>
+			.container{
+				position: absolute;
+				width: 400px;
+				left: 30%;
+				top: 30%;
+			}
+			.container input{
+				position: absolute;
+				margin-top: 0;
+				left: 180px;
+				width: 60%;
+				padding: 12px 20px;
+			}
+			.container label{
+				position: absolute;
+				padding: 12px 12px 12px 0px;
+			}
+			.container button[type="reset"]{
+				padding: 12px 20px;
+				margin-left: 50px;
+				float: left;
+				font-family: Helvetica;
+ 				font-size:16px;
+ 				border-radius: 10%;
+ 				font-weight: bold;
+			}
+			.container button[type="submit"]{
+				padding: 12px 20px;
+				margin-right: 80px;
+				float: right;
+				font-family: Helvetica;
+  				font-size:16px;
+  				border-radius: 10%;
+  				font-weight: bold;
+			}
+			</style>
+	</head>
+	<body>
+		<div class="tit">
+			<h1>WAREHOUSE STOCK MANAGEMENT</h1>
+		</div>
+		<div class="topnav">
+			<a class="left"href="main.html">HOME</a>
+			<a class="left" href="add.html">ADD</a>
+			<a class="left" href="update.html">UPDATE</a>
+			<a class="left" href="#">VIEW</a>
+			<a class="right" href="#">LOGOUT</a>
+		</div>
+		<div class="container">
+		<form>
+			<label for="tag">Tag ID:</label>
+			<input type="number" name="tag" placeholder="Tag ID">
+			<br><br>
+			<label for="pname">Product Name:</label>
+			<input type="text" name="name" placeholder="Product">
+			<br><br>
+			<label for="quan">Quantity:</label>
+			<input type="number" name="quantity" placeholder="Quantity">
+			<br><br>
+			<label for="batch">Batch:</label>
+			<input type="text" name="batch" placeholder="Batch">
+			<br><br><br>
+			<button type="reset">Reset</button>
+			<button type="submit">Update</button>
+		</form>
+	</div>
+	</body>
+</html>

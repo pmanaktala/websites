@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="animate.css">
+<script type="text/javascript">
+	function showReg() {
+		// body...
+		div1=document.getElementById('div1');
+		div2=document.getElementById('div2');
+        div3=document.getElementById('div3');
+		div2.style.display="none";
+        div3.style.display="none";
+		div1.style.display="inline-block";
+	}
+	function showLogIn() {
+		// body...
+		div1=document.getElementById('div1');
+		div2=document.getElementById('div2');
+		div3=document.getElementById('div3');
+        div1.style.display="none";
+		div3.style.display="none";
+        div2.style.display="inline-block";
+	}
+    function showAbout() {
+        // body...
+        div3=document.getElementById('div3');
+        div1=document.getElementById('div1');
+        div2=document.getElementById('div2');
+        div1.style.display="none";
+        div2.style.display="none";
+        div3.style.display="inline-block";
+    }
+</script>
+	<style type="text/css">
+	* 
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+		
+		body
+    {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+
+    }
+    #particles-js
+    {
+      height: 100%;
+      background: #201d1d;
+      z-index: -9999;
+      position: fixed;
+      top:0;
+  right:0;
+  bottom:0;
+  left:0;
+
+    }
+    #div1
+    {
+    	background-color: #fdb731;
+    	padding-top: 20px;
+    	padding-left: 20px;
+    	opacity: 0.7;
+    	border-radius: 5px;
+    	float: right;
+    	/*margin-top: 50px;*/
+    	margin-right: 50px;
+    	display: none;
+    }
+
+    #div1 input
+    {
+    	margin-top: 20px;
+    }
+     #div2
+    {
+    	background-color: #fdb731;
+    	padding-top: 20px;
+    	padding-left: 20px;
+    	opacity: 0.7;
+    	border-radius: 5px;
+    	float: right;
+    	margin-top: 100px;
+    	margin-right: 50px;*/
+    	/*display: none;*/
+    }
+
+    #div2 input
+    {
+    	margin-top: 30px;
+    }
+    
+    .inp
+    {
+    	margin-bottom: 5px;
+    	width: 250px;
+    	height: 20px;
+    	border:none;
+    	outline: none;
+    	background-color: inherit;
+    	border-bottom: 2px solid #201d1d;
+    	color: #201d1d;
+    	font-size: 10pt;
+    	transition: 0.5s;
+    	font-weight: bold;
+
+    }
+    ::placeholder {
+    color: #4a4342;
+    opacity: 1; /* Firefox */
+    font-weight: bold;
+}
+::value {
+    color: #4a4342;
+    opacity: 1; /* Firefox */
+    font-weight: bold;
+}
+.inp:hover
+{
+	transform: scale(1.05);
+}
+#sub
+{
+	width: 100px;
+	height: 30px;
+	margin-left: 150px;
+	border:none;
+	outline: none;
+	background-color: none;
+	border:2px solid #201d1d;
+	border-radius: 5px;
+	background-color: transparent;
+	transition: 0.3s;
+}
+#sub:hover
+{
+	background-color: #201d1d;
+	color: #fdb731;
+	font-weight: bold;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 28px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav button {
+	background: transparent;
+	width: 100%;	
+    /*padding: 8px 8px 8px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    margin-top: 20px;
+    display: block;
+    transition: 0.3s;
+    border:none;
+    outline: none;
+}
+
+.sidenav button:hover {
+    color: #201d1d;
+    background-color: #fdb731;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+#divT
+{
+	margin-top: 150px;
+	margin-left: 200px;
+}
+
+
+svg {
+    display: block;
+    font: 3.5em 'Montserrat';
+    width: 500px;
+    height: 300px;
+    /*margin-left:50px;*/
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 6s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+     #div3
+    {
+        background-color: #fdb731;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        opacity: 0.7;
+        border-radius: 5px;
+        float: right;
+        /*margin-top: 50px;*/
+        margin-top: -10px;
+        margin-right: 50px;
+        display: none;*/
+    }
+    .subhead
+    {
+        font-weight: bold;
+        color: #BD0034;
+
+    }
+    hr
+    {
+        border-color: #201d1d;
+    }
+
+	</style>
+</head>
+<body>
+<div id="particles-js">  </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+  <button onclick="showLogIn()">Log In</button>
+   <button onclick="showReg()">Register</button>
+  <button onclick="showAbout()">About Project</button>
+
+  
+</div>
+<div style="font-size:30px; position:relative; margin-left:30px;margin-top:30px;color:#fdb731; ">
+<span onclick="openNav()" style="cursor:pointer;">&#9776;</span>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div style="position: relative; display: inline-block;" id="divT">
+	<svg viewBox="0 0 500 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="20%">Warehouse</text>
+		<text text-anchor="middle" x="50%" y="45%">Data</text>
+		<text text-anchor="middle" x="50%" y="70%">Management</text>
+		<text text-anchor="middle" x="50%" y="95%">System</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+</div>
+<div style="width: 280px; height: 500px; z-index:90; position: relative;" id="div1" class="animated pulse">
+<span style="font-size:18pt;font-weight: bold;color:black;  ">Register</span><br/>
+<form>
+    
+	<input class="inp" type="email" name="eml" placeholder="Email ID"><br/>
+	<input class="inp" type="text" name="eml" placeholder="Name"><br/>
+	<input class="inp" type="text" name="eml" placeholder="Registration Number"><br/>
+	<input class="inp" type="number" min="1" max="4" name="year" placeholder="Year"><br/> <input class="inp" type="date" name="dob" placeholder="DOB"><br/>
+	<input class="inp" type="number" name="ph" placeholder="Phone Number"><br/>
+
+	<input class="inp" type="password" name="psw" placeholder="Password"><br/>
+	<input class="inp" type="password" name="psw2" placeholder="Confirm password"><br/>
+	<input type="submit" name="" value="Sign In!" id="sub">
+
+
+</form>
+</div>
+<div style="width: 280px; height: 250px; z-index:90; position: relative;" id="div2" class="animated slideInLeft">
+<span style="font-size:18pt;font-weight: bold;color:black;  ">Sign In!</span><br/>
+    <form action="validate.php" method="post">
+	<input class="inp" type="text" name="eml" placeholder="Username"><br/>
+	<input class="inp" type="password" name="psw" placeholder="Password"><br/>
+	<input type="submit" name="" value="Sign In!" id="sub">
+    </form>
+</div>
+<div style="width: 260px; height: 580px; z-index:90; position: relative;" id="div3" class="animated slideInLeft">
+<span style="font-size:18pt;font-weight: bold;color:black;  ">About Us!</span><br/>
+<hr style="margin-left:-6px; width:100%;text-align: center; ">
+<p style="text-align: justify;color:#201d1d;font-size:11pt; margin-top:-5px;">
+    
+        A <span class="subhead">warehouse management system</span> is a software application, that uses hardware designed to support and optimize warehouse or distribution center management. 
+They facilitate management in their daily planning, organizing, and controlling the utilization of available resources, to move and store materials into, within, and out of a warehouse. 
+<br/>
+<span class="subhead">Planning</span> - Finalizing the daily plan for receiving products, selecting the workload/orders to be processed in the day or shift.
+<br/>
+<span class="subhead">Organizing</span> - Keeping a track of the quantity of orders received and a count of the products that are coming in or going out.
+<br/>
+<span class="subhead">Staffing </span>- assigning staffs to different work each day.
+ <br/>
+<span class="subhead">Controlling</span> - providing milestones for management to monitor progress through the day, providing the opportunity to respond to problems in a timely way and report data for performance analysis.
+
+
+    
+</p>
+
+</div>
+
+<script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+  
+</body>
+</html>
